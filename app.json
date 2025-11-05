@@ -29,7 +29,8 @@
       "permissions": [
         "INTERNET",
         "VIBRATE"
-      ]
+      ],
+      "privacyPolicy": "https://snmandal1953-glitch.github.io/MedResus/privacy.html"
     },
     "extra": {
       "eas": {
