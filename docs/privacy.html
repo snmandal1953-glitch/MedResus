@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MedResus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #1e293b;
+            background: #f8fafc;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            padding: 40px 30px;
+        }
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+        }
+        .header p {
+            opacity: 0.95;
+            font-size: 0.95em;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        h2 {
+            color: #0f172a;
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        h3 {
+            color: #334155;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+        p, li {
+            margin-bottom: 12px;
+            color: #475569;
+        }
+        ul {
+            margin-left: 25px;
+        }
+        .highlight {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .summary {
+            background: #f0f9ff;
+            border: 2px solid #0ea5e9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        .summary h3 {
+            color: #0c4a6e;
+            margin-top: 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #ef4444;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background: #0f172a;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <p><strong>Effective Date:</strong> November 5, 2025 | <strong>Last Updated:</strong> November 5, 2025</p>
+        </div>
+        
+        <div class="content">
+            <a href="index.html" class="back-link">← Back to Home</a>
+
+            <h2>Introduction</h2>
+            <p>MedResus ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application MedResus (the "App").</p>
+
+            <h2>Information We Collect</h2>
+            
+            <h3>Personal Information</h3>
+            <ul>
+                <li><strong>Email Address</strong>: Collected during login for user identification and license activation</li>
+                <li><strong>Name</strong>: Collected for user profile and event attribution in case logs</li>
+                <li><strong>Hospital/Unit Information</strong>: Session location data (hospital name, department/unit)</li>
+            </ul>
+
+            <h3>Medical/Health Data</h3>
+            <ul>
+                <li><strong>Resuscitation Case Logs</strong>: Timestamps, event descriptions, interventions performed</li>
+                <li><strong>Patient Location</strong>: Bed/room location (optional)</li>
+                <li><strong>UHID</strong>: Unique hospital identifier (optional, if provided by user)</li>
+                <li><strong>Quality Metrics</strong>: Calculated from case events (time to interventions, CPR quality)</li>
+            </ul>
+
+            <h3>Technical Data</h3>
+            <ul>
+                <li><strong>Device Information</strong>: Operating system, app version</li>
+                <li><strong>Usage Data</strong>: Features accessed, session duration</li>
+                <li><strong>License Information</strong>: Subscription tier, activation date, license key</li>
+            </ul>
+
+            <h2>How We Use Your Information</h2>
+            <p>We use the collected information to:</p>
+            <ul>
+                <li>Provide core app functionality (case logging, documentation)</li>
+                <li>Enable license activation and subscription management</li>
+                <li>Generate quality metrics and debrief summaries</li>
+                <li>Allow CSV export of case data for audit and research</li>
+                <li>Improve app performance and user experience</li>
+                <li>Communicate important updates about licenses or subscriptions</li>
+            </ul>
+
+            <h2>Data Storage and Security</h2>
+            
+            <div class="highlight">
+                <h3>Local Storage</h3>
+                <ul>
+                    <li><strong>All case data is stored locally</strong> on your device using encrypted AsyncStorage</li>
+                    <li><strong>No cloud sync</strong>: We do NOT upload your case logs or patient data to our servers</li>
+                    <li>Data remains on your device until you delete it or uninstall the app</li>
+                </ul>
+            </div>
+
+            <h3>Security Measures</h3>
+            <ul>
+                <li>Device-level encryption for stored data</li>
+                <li>Email-based license validation</li>
+                <li>No transmission of patient identifiable information</li>
+                <li>Secure local storage using React Native AsyncStorage</li>
+            </ul>
+
+            <h2>Data Sharing and Disclosure</h2>
+            
+            <h3>We Do NOT Share Your Data</h3>
+            <ul>
+                <li>We do not sell, rent, or share your personal or medical data with third parties</li>
+                <li>Case logs remain on your device only</li>
+                <li>Email addresses are used solely for license activation</li>
+            </ul>
+
+            <h3>Email Export Feature</h3>
+            <ul>
+                <li>You may choose to export case data via email using your device's email client</li>
+                <li>This is a manual action initiated by you</li>
+                <li>We do not have access to exported data sent via email</li>
+            </ul>
+
+            <h3>Legal Requirements</h3>
+            <p>We may disclose information if required by law, regulation, legal process, or governmental request.</p>
+
+            <h2>Data Retention</h2>
+            <ul>
+                <li><strong>Case Data</strong>: Retained on your device until you manually delete it or uninstall the app</li>
+                <li><strong>User Profile</strong>: Stored locally until you log out or uninstall</li>
+                <li><strong>License Information</strong>: Stored locally for subscription validation</li>
+                <li><strong>No Server-Side Storage</strong>: We do not retain any data on our servers</li>
+            </ul>
+
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Access</strong>: View all data stored in the app at any time</li>
+                <li><strong>Export</strong>: Export your case logs as CSV files</li>
+                <li><strong>Delete</strong>: Clear individual cases or all data from the app</li>
+                <li><strong>Uninstall</strong>: Remove the app and all associated data from your device</li>
+            </ul>
+
+            <h3>How to Delete Your Data</h3>
+            <ol>
+                <li>Within the app: Navigate to cases and delete individual entries</li>
+                <li>Complete removal: Uninstall the MedResus app from your device</li>
+                <li>Contact us: Email <a href="mailto:snmandal1953@gmail.com">snmandal1953@gmail.com</a> to request assistance</li>
+            </ol>
+
+            <h2>HIPAA Compliance (US Users)</h2>
+            <div class="highlight">
+                <p><strong>Important Notice for US Healthcare Providers:</strong></p>
+                <ul>
+                    <li>MedResus is designed to minimize Protected Health Information (PHI) collection</li>
+                    <li>The app does NOT require patient names, medical record numbers, or other direct identifiers</li>
+                    <li>All data is stored locally on your device, not on cloud servers</li>
+                    <li>You are responsible for ensuring your use complies with HIPAA requirements at your institution</li>
+                    <li>We recommend using only de-identified data or institution-approved patient identifiers</li>
+                </ul>
+                <p><strong>MedResus is NOT a HIPAA Business Associate</strong> as we do not access, store, or transmit your data on our servers.</p>
+            </div>
+
+            <h2>GDPR Compliance (EU Users)</h2>
+            <p>If you are located in the European Economic Area (EEA), you have additional rights under GDPR:</p>
+            <ul>
+                <li>Right to access your personal data</li>
+                <li>Right to rectification of inaccurate data</li>
+                <li>Right to erasure ("right to be forgotten")</li>
+                <li>Right to data portability (CSV export)</li>
+                <li>Right to withdraw consent</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            
+            <h3>Expo Framework</h3>
+            <ul>
+                <li>MedResus is built using Expo (<a href="https://expo.dev" target="_blank">https://expo.dev</a>)</li>
+                <li>Expo may collect anonymized usage analytics</li>
+                <li>Refer to <a href="https://expo.dev/privacy" target="_blank">Expo Privacy Policy</a></li>
+            </ul>
+
+            <h3>In-App Purchases</h3>
+            <ul>
+                <li>Payment processing handled by Google Play / Apple App Store</li>
+                <li>We do not store payment card information</li>
+                <li>Refer to Google/Apple privacy policies for payment data handling</li>
+            </ul>
+
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy periodically. Changes will be posted within the app and on our website with an updated "Last Updated" date. Continued use of the app constitutes acceptance of changes.</p>
+
+            <h2>Medical Disclaimer</h2>
+            <p>MedResus is a documentation tool only. It is not a medical device and does not provide medical advice, diagnosis, or treatment. Always follow institutional protocols and current resuscitation guidelines.</p>
+
+            <div class="summary">
+                <h3>Summary (Quick Reference)</h3>
+                <ul style="margin-left: 0; list-style: none;">
+                    <li>✅ <strong>What we collect:</strong> Email, name, hospital/unit, case logs (stored locally)</li>
+                    <li>✅ <strong>Where it's stored:</strong> On your device only (no cloud)</li>
+                    <li>✅ <strong>Who sees it:</strong> Only you</li>
+                    <li>✅ <strong>How to delete:</strong> Uninstall app or delete cases manually</li>
+                    <li>✅ <strong>Your control:</strong> Full ownership of your data</li>
+                </ul>
+            </div>
+
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or wish to exercise your data rights:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:snmandal1953@gmail.com">snmandal1953@gmail.com</a><br>
+                <strong>Developer:</strong> Sumit Mandal<br>
+                <strong>App Name:</strong> MedResus<br>
+                <strong>Address:</strong> India
+            </p>
+
+            <p style="margin-top: 30px; text-align: center; font-style: italic;">
+                By using MedResus, you agree to this Privacy Policy.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 MedResus. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

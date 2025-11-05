@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedResus - Resuscitation Documentation App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .link-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+            text-decoration: none;
+            color: #0f172a;
+            transition: all 0.3s ease;
+        }
+        .link-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-color: #ef4444;
+        }
+        .link-card h2 {
+            font-size: 1.4em;
+            margin-bottom: 8px;
+            color: #ef4444;
+        }
+        .link-card p {
+            font-size: 0.95em;
+            color: #64748b;
+        }
+        .features {
+            margin: 30px 0;
+        }
+        .features h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .feature-item {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+        .feature-item::before {
+            content: "✓ ";
+            color: #22c55e;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .footer {
+            background: #0f172a;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .footer p {
+            margin: 5px 0;
+            opacity: 0.8;
+        }
+        .footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📱 MedResus</h1>
+            <p>Real-Time Cardiac Arrest Documentation for Healthcare Teams</p>
+        </div>
+        
+        <div class="content">
+            <div class="links">
+                <a href="privacy.html" class="link-card">
+                    <h2>🔒 Privacy Policy</h2>
+                    <p>How we protect your data</p>
+                </a>
+                <a href="terms.html" class="link-card">
+                    <h2>📋 Terms of Service</h2>
+                    <p>Usage terms and conditions</p>
+                </a>
+            </div>
+
+            <div class="features">
+                <h3>Key Features</h3>
+                <div class="feature-list">
+                    <div class="feature-item">Real-time event logging</div>
+                    <div class="feature-item">CPR timer with alerts</div>
+                    <div class="feature-item">Team role management</div>
+                    <div class="feature-item">Quality metrics</div>
+                    <div class="feature-item">Debrief summaries</div>
+                    <div class="feature-item">CSV export</div>
+                    <div class="feature-item">4H & 4T checklist</div>
+                    <div class="feature-item">Multi-language support</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.1em; color: #64748b; margin-bottom: 15px;">
+                    <strong>Available on Google Play Store</strong>
+                </p>
+                <p style="font-size: 0.95em; color: #94a3b8;">
+                    30-day free trial • Department, Site & Enterprise licenses available
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Contact:</strong> <a href="mailto:snmandal1953@gmail.com">snmandal1953@gmail.com</a></p>
+            <p style="margin-top: 15px; font-size: 0.9em;">© 2025 MedResus. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
